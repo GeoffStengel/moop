@@ -11,12 +11,13 @@ gsap.from(".social_links", {
 }) 
 /*Controls Social Links Animation END*/
 
-/*Controls H1 Animation START*/
-gsap.from("h1", {
-    y: -100,
-    duration: 1,
+/*Controls Logo GSAP Animation START*/
+gsap.from(".logo", {
+    scale: 0.5, // Start at 50% size
     opacity: 0,
-    delay: .2,
-    ease: 'back.out'
-}) 
-/*Controls H1 Animation END*/
+    duration: 3,
+    delay: 0.2,
+    ease: "elastic.out(1, 0.5)" // Elastic bounce effect
+  });
+/*Controls Logo GSAP Animation END*/
+
