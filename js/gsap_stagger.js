@@ -1,3 +1,12 @@
+window.addEventListener("load", () => {
+    gsap.to(".social_links", {
+      scale: 1.03,
+      duration: 3,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+  });
 
 /*Controls Social Links Animation START*/
 gsap.from(".social_links", {

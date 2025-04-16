@@ -74,7 +74,9 @@ h1{
 .top_logo_grid{
     display: grid;
     width: 100%;
-    height: 100%;
+    height: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     padding: 5px;
     margin: 0 auto;
 }
@@ -82,6 +84,25 @@ h1{
     height: 80px;
     margin: 0 auto;
     align-self: center;
+    grid-column: 2;
+}
+.icons{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+.icon_grid{
+    display: grid;
+    height: 90px;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 25px 25px 25px;
+    margin: 0 auto;
+    margin-left: 0;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 /*Grid Holding social_links Which Is Twitter Button etc..*/
 .social_grid{
@@ -124,16 +145,17 @@ h1{
 }
 /*When User Hovers Social Tab These Are The Effects*/
 .social_links:hover{
+    width: 148px;
     background-color: yellow;
     border-style: solid;
     border-width:1px;
     border-color:  var(--accent-color);
     box-shadow: 0 0 8px rgb(228, 227, 227);
 }
-/*When User Presses Social Tab Can Make Btn Smaller or Add Border colors etc..*/
+/*When User Presses Social Tab It Adjusts Design*/
 .social_links:active{
-    width: 145px;
-    height: 48px;
+    width: 144px;
+    height: 47px;
     border-width:3px;
     font-size: 14px;
     background-color: #00E5FF;
